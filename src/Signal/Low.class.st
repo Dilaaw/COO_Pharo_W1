@@ -12,7 +12,19 @@ Low >> and: aSignal [
 ]
 
 { #category : 'controlling' }
+Low >> not [
+
+	^ High new
+]
+
+{ #category : 'controlling' }
 Low >> or: aSignal [
 
 	^ aSignal 
+]
+
+{ #category : 'evaluating' }
+Low >> value [
+
+	^ 0
 ]
