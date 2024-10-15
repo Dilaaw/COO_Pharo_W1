@@ -28,7 +28,23 @@ Die >> initialize [
 	faces :=6
 ]
 
+{ #category : 'printing' }
+Die >> printOn: aStream [
+
+	super printOn: aStream.
+	aStream nextPutAll: ' (' , faces printString , ')'.
+]
+
 { #category : 'dsl' }
 Die >> roll [
 	^ faces atRandom
+]
+
+{ #category : 'instanceCreation' }
+Die >> withFaces: anInteger [
+
+	| die |
+	die := self class new.
+	die faces: anInteger.
+	^ die
 ]
