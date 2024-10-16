@@ -17,6 +17,17 @@ RbsAbstractRobot class >> textualMapCharacter [
 	^ $X
 ]
 
+{ #category : 'accessing' }
+RbsAbstractRobot >> previousTile [
+	^previousTile 
+]
+
+{ #category : 'accessing' }
+RbsAbstractRobot >> previousTile: aNewPreviousTile [
+
+	previousTile := aNewPreviousTile 
+]
+
 { #category : 'instance creation' }
 RbsAbstractRobot >> x: xCoord y: yCoord [
 	previousTile := self board atX: xCoord atY: yCoord.
