@@ -1,6 +1,6 @@
 Class {
 	#name : 'Gates2Input',
-	#superclass : 'Object',
+	#superclass : 'SingleInput',
 	#instVars : [
 		'input2'
 	],
@@ -9,6 +9,13 @@ Class {
 }
 
 { #category : 'accessing' }
-Gates2Input >> input2: anInput [
-	^ input2:= anInput 
+Gates2Input >> input2: aGate2Input [
+
+    input2 := aGate2Input
+]
+
+{ #category : 'accessing' }
+Gates2Input >> input: aGate2Input [
+
+    input := aGate2Input
 ]

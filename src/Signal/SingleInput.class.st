@@ -15,8 +15,13 @@ SingleInput >> input: aSingleInput [
 ]
 
 { #category : 'printing' }
-SingleInput >> printOn: aSignleInput [
+SingleInput >> printOn: aSingleInput [
 
-	super printOn: aSignleInput.
-	aSignleInput nextPutAll: ' (' , input printString , ')'
+	super printOn: aSingleInput.
+	aSingleInput nextPutAll: ' (' , input printString , ')'
+]
+
+{ #category : 'accessing - structure variables' }
+SingleInput >> state [
+	^ input state
 ]

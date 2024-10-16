@@ -1,6 +1,6 @@
 Class {
 	#name : 'Fan',
-	#superclass : 'Object',
+	#superclass : 'SingleInput',
 	#category : 'Signal',
 	#package : 'Signal'
 }

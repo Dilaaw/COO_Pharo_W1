@@ -1,6 +1,6 @@
 Class {
 	#name : 'Not',
-	#superclass : 'Object',
+	#superclass : 'SingleInput',
 	#category : 'Signal',
 	#package : 'Signal'
 }
